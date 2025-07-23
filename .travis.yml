@@ -6,8 +6,8 @@ services:
 
 
 before_install:
-  - docker build -t stephengrider/docker-react -f Dockerfile.dev .
+  - docker build -t geliarda/docker-react -f Dockerfile.dev .
 
 
 script:
-  - docker run -e CI=true stephengrider/docker-react npm run test -- --coverage
+  - docker run -e CI=true geliarda/docker-react npm run test -- --coverage
